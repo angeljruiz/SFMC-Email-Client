@@ -49,7 +49,7 @@ SFMC::Transactional::SendDefinition.refresh 'email_name'
 ### Creating a Transactional Email Send Definition
 <b>Note:</b> The first time an email is sent a send definition for it will be created with the default values. This definition take about a minute to actually become active, so try sending again after that. You can also manually create a send definition using:
 ```ruby
-SFMC::Transactional::SendDefinition(
+SFMC::Transactional::SendDefinition.create(
   definition_key: 'definition_key', 
   customer_key: 'customer_key', 
   send_classification: 'send_classification', 
